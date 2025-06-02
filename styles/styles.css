@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* =========navigation bar  */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  width: 100%;
+  gap: 20px;
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-grow: 1;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.searchEvents {
+  height: 42px;
+  width: 300px;
+  font-size: 16px;
+  padding-left: 30px;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px 0 0 8px;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.mountain-group {
+  display: flex;
+  align-items: center;
+}
+
+.mountainView {
+  height: 42px;
+  width: 294px;
+  font-size: 16px;
+  border: 1px solid #d9d9d9;
+  border-right: none;
+  padding: 0 10px;
+}
+
+.mountainBtn {
+  background-color: #f65858;
+  border: none;
+  width: 42px;
+  height: 42px;
+  border-radius: 0 8px 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.mountainBtn img {
+  width: 20px;
+  height: 20px;
+}
+
+.right-bar {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-left: auto;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.signup {
+  background-color: #00798a;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.login {
+  text-decoration: none;
+  color: black;
+}
+
+/* =========header  */
