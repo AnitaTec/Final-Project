@@ -88,6 +88,15 @@ nav {
   height: 20px;
 }
 
+.language {
+  font-size: 14px;
+}
+
+.languagePlanet {
+  width: 20px;
+  height: 20px;
+}
+
 .right-bar {
   display: flex;
   align-items: center;
@@ -104,14 +113,63 @@ nav {
 .signup {
   background-color: #00798a;
   color: white;
-  padding: 8px 12px;
+  width: 83px;
+  height: 36px;
   border-radius: 8px;
   text-decoration: none;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .login {
   text-decoration: none;
   color: black;
+  font-size: 14px;
 }
 
 /* =========header  */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.intrudiction {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.intrudiction h1 {
+  font-size: 42px;
+  width: 601px;
+  text-align: left;
+}
+
+.intrudiction p {
+  font-size: 16px;
+  width: 608px;
+  text-align: left;
+}
+
+.joinMeetup {
+  width: 125px;
+  height: 40px;
+  background-color: #00798a;
+  color: #ffffff;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.header img {
+  margin-left: 46px;
+}
+
+/* =========header  */
+/* ========== */
