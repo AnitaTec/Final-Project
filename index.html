@@ -15,26 +15,9 @@
   <body>
     <nav>
       <div class="menu">
-        <img src="icon/Vector.svg" alt="Vector" />
+        <img class="logo" src="icon/Vector.svg" alt="Vector" />
 
         <div class="nav-content">
-          <form class="search-form">
-            <div class="input-wrapper">
-              <input type="text" class="searchEvents" placeholder="Search..." />
-              <img src="icon/search.svg" alt="Search" class="search-icon" />
-            </div>
-
-            <div class="mountain-group">
-              <input
-                type="text"
-                class="mountainView"
-                placeholder="Mountain View, CA"
-              />
-              <button class="mountainBtn">
-                <img src="icon/search.svg" alt="Search" />
-              </button>
-            </div>
-          </form>
           <div class="right-bar">
             <span class="bar">
               <img
@@ -49,22 +32,35 @@
           </div>
         </div>
       </div>
+      <div class="mobile-search">
+        <div class="input-wrapper">
+          <input
+            type="text"
+            class="searchEventsMobile"
+            placeholder="Search events"
+          />
+          <img src="icon/search.svg" alt="Search" class="search-icon-mobile" />
+          <button class="mountainBtnMobile">
+            <img src="icon/search.svg" alt="Search" />
+          </button>
+        </div>
+      </div>
     </nav>
     <main>
       <div class="header">
         <div class="intrudiction">
           <h1>The people platform—Where interests become friendships</h1>
-          <p>
+          <p class="eventDisc">
             Whatever your interest, from hiking and reading to networking and
             skill sharing, there are thousands of people who share it on Meetup.
             Events are happening every day—sign up to join the fun.
           </p>
           <a href="index2.html">
-            <button class="joinMeetup">Join Meetup</button>
+            <button class="joinMeetupBtn">Join Meetup</button>
           </a>
         </div>
         <div>
-          <img src="img/irl_event.svg.png" alt="" />
+          <img class="headerImg" src="img/irl_event.svg.png" alt="" />
         </div>
       </div>
     </main>

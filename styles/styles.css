@@ -9,9 +9,8 @@
 
 nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 15px;
+  margin: 15px 49px 0 24px;
 }
 
 .menu {
@@ -26,7 +25,6 @@ nav {
   display: flex;
   align-items: center;
   gap: 20px;
-  flex-grow: 1;
 }
 
 .search-form {
@@ -45,6 +43,7 @@ nav {
   width: 300px;
   font-size: 16px;
   padding-left: 30px;
+  margin-left: 40px;
   border: 1px solid #d9d9d9;
   border-radius: 8px 0 0 8px;
 }
@@ -52,7 +51,7 @@ nav {
 .search-icon {
   position: absolute;
   top: 50%;
-  left: 8px;
+  left: 50px;
   transform: translateY(-50%);
   pointer-events: none;
 }
@@ -64,7 +63,7 @@ nav {
 
 .mountainView {
   height: 42px;
-  width: 294px;
+  width: 254px;
   font-size: 16px;
   border: 1px solid #d9d9d9;
   border-right: none;
@@ -129,34 +128,135 @@ nav {
   font-size: 14px;
 }
 
+.mobile-search {
+  display: none;
+}
+
+@media (max-width: 393px) {
+  .search-form {
+    display: none;
+  }
+
+  .mobile-search {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+
+  .mobile-search .input-wrapper {
+    display: flex;
+  }
+
+  .searchEventsMobile {
+    width: 300px;
+    height: 42px;
+    font-size: 14px;
+    padding-left: 35px;
+    border: 1px solid #d9d9d9;
+    border-radius: 8px 0 0 8px;
+    width: 300px;
+  }
+
+  .search-icon-mobile {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+  }
+
+  .mountainBtnMobile {
+    background-color: #f65858;
+    border: none;
+    width: 42px;
+    height: 42px;
+    border-radius: 0 8px 8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -1px;
+    cursor: pointer;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 5px 7px 0 24px;
+    gap: 5px;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    width: auto;
+  }
+
+  .right-bar {
+    gap: 19px;
+  }
+
+  .logo {
+    width: 94px;
+    height: 34px;
+  }
+
+  .login,
+  .language {
+    font-size: 12px;
+  }
+
+  .languagePlanet {
+    width: 17px;
+    height: 17px;
+  }
+
+  .signup {
+    width: 71px;
+    height: 30px;
+    font-size: 12px;
+  }
+}
 /* =========header  */
 .header {
   display: flex;
   justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
   margin-top: 70px;
+  gap: 46px;
 }
 
 .intrudiction {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  align-items: flex-start;
 }
 
 .intrudiction h1 {
   font-size: 42px;
   width: 601px;
   text-align: left;
+  line-height: 52px;
 }
 
-.intrudiction p {
+.eventDisc {
   font-size: 16px;
   width: 608px;
   text-align: left;
+  line-height: 24px;
 }
 
-.joinMeetup {
+.joinMeetupBtn {
   width: 125px;
   height: 40px;
   background-color: #00798a;
@@ -167,8 +267,42 @@ nav {
   cursor: pointer;
 }
 
-.header img {
-  margin-left: 46px;
+@media (max-width: 393px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+  }
+
+  .joinMeetupBtn {
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+  }
+
+  .intrudiction {
+    gap: 20px;
+  }
+
+  .intrudiction h1 {
+    font-size: 25px;
+    width: 352px;
+    line-height: 30px;
+  }
+
+  .eventDisc {
+    font-size: 12px;
+    width: 358px;
+    line-height: 24px;
+  }
+
+  .headerImg {
+    width: 215px;
+    height: 152px;
+  }
 }
 
 /* =========header  */
