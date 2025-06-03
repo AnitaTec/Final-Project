@@ -15,7 +15,6 @@ nav {
 
 .menu {
   display: flex;
-  align-items: center;
   font-size: 16px;
   width: 100%;
   gap: 20px;
@@ -24,6 +23,8 @@ nav {
 .nav-content {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
   gap: 20px;
 }
 
@@ -99,8 +100,8 @@ nav {
 .right-bar {
   display: flex;
   align-items: center;
+
   gap: 22px;
-  margin-left: auto;
 }
 
 .bar {
@@ -126,6 +127,16 @@ nav {
   text-decoration: none;
   color: black;
   font-size: 14px;
+  width: 60px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 118px;
+  height: 34px;
 }
 
 .mobile-search {
@@ -234,24 +245,29 @@ nav {
   flex-wrap: wrap;
   margin-top: 70px;
   gap: 46px;
+  padding: 0 16px;
 }
 
 .intrudiction {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  width: 601px;
+  max-width: 100%;
+
+  min-width: 0;
 }
 
 .intrudiction h1 {
   font-size: 42px;
-  width: 601px;
+
   text-align: left;
   line-height: 52px;
 }
 
 .eventDisc {
   font-size: 16px;
-  width: 608px;
+
   text-align: left;
   line-height: 24px;
 }
