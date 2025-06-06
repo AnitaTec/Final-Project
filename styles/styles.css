@@ -5,6 +5,9 @@
   font-family: "Roboto", sans-serif;
 }
 
+body {
+  background-color: #ffffff;
+}
 /* =========navigation bar  */
 
 nav {
@@ -281,6 +284,7 @@ nav {
   border: none;
   font-size: 16px;
   cursor: pointer;
+  margin-bottom: 98px;
 }
 
 @media (max-width: 393px) {
@@ -322,4 +326,271 @@ nav {
 }
 
 /* =========header  */
+/* ========== events*/
+
+/* === КОНТЕЙНЕР === */
+.container {
+  width: 100%;
+  max-width: 1196px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* === ОБЩИЙ СТИЛЬ ДЛЯ КАРТИНОК === */
+.eventImg {
+  width: 100%;
+  height: 153px;
+  object-fit: cover;
+}
+
+/* === ЗАГОЛОВКИ === */
+.mainPoints {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 36px;
+}
+
+/* === КНОПКА ГОРОДА === */
+.caMuntainBtn {
+  width: 239px;
+  height: 44px;
+  border: none;
+  border-radius: 8px;
+  color: #00798a;
+  background-color: #97cad124;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+  cursor: pointer;
+}
+
+.caMuntainBtn img {
+  width: 22px;
+  height: 22px;
+}
+
+/* === ССЫЛКА "SEE ALL" === */
+.seeAllA {
+  text-decoration: none;
+  color: #00798a;
+  font-size: 16px;
+}
+
+/* === EVENTS (верхняя панель) === */
+.events,
+.onlineEvents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.events {
+  margin-top: 28px;
+}
+
+.onlineEvents {
+  margin-top: 40px;
+}
+
+.events-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* === СЕТКА КАРТОЧЕК === */
+.eventCards,
+.onlineCards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 36px;
+  margin-top: 28px;
+  justify-content: space-between;
+}
+
+.eventCards > div,
+.onlineCards > div {
+  width: 100%;
+  max-width: 272px;
+  height: 399px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: hidden;
+  justify-content: flex-start;
+}
+
+/* === НАЗВАНИЕ СОБЫТИЯ === */
+.nameOfEvent {
+  margin-top: 12px;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: left;
+  font-weight: bold;
+}
+
+/* === ТЕГ/РАССТОЯНИЕ === */
+.distance {
+  margin-top: 8px;
+  color: #707070;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* === КАЛЕНДАРЬ + ДАТА === */
+.eventTime {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #212121;
+}
+
+.eventTime img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.eventTime span {
+  line-height: 20px;
+  white-space: nowrap;
+}
+/* ========= */
+.visitors {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.visitors img {
+  width: 20px;
+  height: 20px;
+  margin-right: 2px;
+  object-fit: contain;
+}
+
+.visitors span {
+  font-size: 16px;
+  color: #212121;
+  margin-right: 15px;
+  line-height: 24px;
+}
+@media (max-width: 393px) {
+  .eventCards,
+  .onlineCards {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
+  .eventCards > div,
+  .onlineCards > div {
+    flex-direction: row;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    gap: 5px;
+  }
+
+  .eventImg {
+    width: 97px;
+    height: auto;
+
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  .eventCards > div > *,
+  .onlineCards > div > * {
+    flex-direction: ;
+  }
+
+  .eventTime,
+  .visitors {
+    flex-wrap: wrap;
+  }
+
+  .nameOfEvent {
+    font-size: 10px;
+  }
+}
+/* ============ */
+
+.joinMeetup {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #97cad155;
+  max-width: 1192px;
+  height: 236px;
+}
+
+.metuupSingIn {
+  max-width: 739px;
+  height: 164px;
+}
+
+h4 {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.metuupSingIn p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.metuupSingIn button {
+  width: 192px;
+  height: 40px;
+  background-color: #e32359;
+  color: #ffffff;
+  border-radius: 8px;
+  border: none;
+}
+
+/* =========== */
+
+.exploreCategories {
+  margin: 0 auto;
+  max-width: 1192px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  margin-top: 64px;
+  margin-bottom: 24px;
+}
+
+.CategoriesImg {
+  max-width: 1192px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 /* ========== */
+
+.metuupCity {
+  margin: 0 auto;
+  max-width: 1192px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 64px;
+  margin-bottom: 24px;
+}
+
+.metuupCity p {
+  margin-top: 16px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #707070;
+}
