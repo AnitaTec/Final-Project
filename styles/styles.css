@@ -148,6 +148,77 @@ nav {
   display: none;
 }
 
+@media (max-width: 750px) {
+  .search-form {
+    display: none;
+  }
+
+  .mobile-search {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+
+  .mobile-search .input-wrapper {
+    display: flex;
+  }
+
+  .searchEventsMobile {
+    width: 300px;
+    height: 42px;
+    font-size: 14px;
+    padding-left: 35px;
+    border: 1px solid #d9d9d9;
+    border-radius: 8px 0 0 8px;
+    width: 300px;
+  }
+
+  .search-icon-mobile {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+  }
+
+  .mountainBtnMobile {
+    background-color: #f65858;
+    border: none;
+    width: 42px;
+    height: 42px;
+    border-radius: 0 8px 8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -1px;
+    cursor: pointer;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 5px 7px 0 24px;
+    gap: 5px;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    width: auto;
+  }
+}
+
 @media (max-width: 393px) {
   .search-form {
     display: none;
@@ -388,6 +459,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  padding: 15px;
 }
 
 .events {
@@ -426,10 +498,10 @@ nav {
 .eventCards,
 .onlineCards {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(272px, 1fr));
   gap: 36px;
   margin-top: 28px;
-  justify-content: space-between;
+  padding: 15px;
 }
 
 .eventCards > div,
@@ -508,7 +580,6 @@ nav {
     grid-template-columns: 1fr;
     display: grid;
     justify-content: center;
-    margin: 15px;
   }
   .visitors {
     display: none;
@@ -610,7 +681,7 @@ nav {
   .joinMeetup {
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 15px;
   }
 
   .metuupSingIn {
@@ -653,6 +724,7 @@ nav {
   align-items: center;
   margin-top: 64px;
   margin-bottom: 24px;
+  padding: 15px;
 }
 
 .CategoriesImg {
@@ -683,6 +755,7 @@ nav {
   display: flex;
   flex-direction: column;
   margin-top: 64px;
+  padding: 15px;
 }
 
 /* styles for two p  */
@@ -738,6 +811,10 @@ nav {
   .metuupCitys {
     gap: 20px;
   }
+
+  .miami-item {
+    display: none !important;
+  }
 }
 
 /* =========how metuup works */
@@ -747,6 +824,7 @@ nav {
   align-items: center;
   justify-content: center;
   gap: 32px;
+  margin: 15px;
 }
 
 .metuupWorks {
@@ -778,11 +856,38 @@ h5 {
   font-size: 16px;
 }
 
+@media (max-width: 800px) {
+  .containerMetuup {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h5 {
+    font-size: 17px;
+    line-height: 15px;
+  }
+
+  .metuupWorks p {
+    font-size: 12px;
+    line-height: 15px;
+    margin: 10px 0 10px 0;
+  }
+
+  .grEvents {
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  .metuupWorks img {
+    width: 35px;
+    height: 35px;
+  }
+}
+
 @media (max-width: 393px) {
   .containerMetuup {
     display: flex;
     flex-direction: column;
-    margin: 15px;
   }
 
   h5 {
@@ -814,8 +919,9 @@ h5 {
   max-width: 1192px;
   display: flex;
   flex-wrap: wrap;
-  gap: 32px;
+  gap: 18px;
   margin-top: 38px;
+  margin: 15px;
 }
 
 h6 {
@@ -850,7 +956,6 @@ h6 {
   .friendsContainer {
     display: flex;
     flex-direction: column;
-    margin: 15px;
   }
 
   .h6 {
@@ -992,7 +1097,7 @@ footer {
 
 @media (max-width: 590px) {
   footer {
-    padding: 0 10px;
+    padding: 0 11px;
   }
   .footerNav {
     gap: 43px;
