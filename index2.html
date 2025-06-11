@@ -68,7 +68,69 @@
         </div>
       </div>
     </nav>
-    <main></main>
+    <main>
+      <div class="map-wrapper">
+        <div class="filter-section">
+          <h2 class="filter-title">Events near New York, NY</h2>
+          <p class="eventTitle">Events</p>
+          <div class="filter-buttons">
+            <div class="filter-wrapper">
+              <div class="filter-btn" data-type="type">
+                <span class="label">Any type</span>
+                <span class="arrow">▼</span>
+              </div>
+              <ul class="dropdown-list" id="type-options">
+                <li>Any type</li>
+                <li>online</li>
+                <li>offline</li>
+              </ul>
+            </div>
+            <div class="filter-wrapper">
+              <div class="filter-btn" data-type="distance">
+                <span class="label">Any distance</span>
+                <span class="arrow">▼</span>
+              </div>
+              <ul class="dropdown-list" id="distance-options">
+                <li>Any distance</li>
+                <li>10 km</li>
+                <li>25 km</li>
+                <li>50 km</li>
+                <li>100 km</li>
+              </ul>
+            </div>
+            <div class="filter-wrapper">
+              <div class="filter-btn" data-type="category">
+                <span class="label">Any category</span>
+                <span class="arrow">▼</span>
+              </div>
+              <ul class="dropdown-list" id="category-options">
+                <li>Any category</li>
+                <li>Technology</li>
+                <li>Hobbies and Passions</li>
+                <li>Business</li>
+                <li>Social Activities</li>
+                <li>Health and Wellbeing</li>
+              </ul>
+            </div>
+          </div>
+          <div class="eventContainer"></div>
+        </div>
+        <div class="map-section">
+          <div class="map-text">
+            <p class="find-title">Find events near</p>
+            <p class="find-location">New York, NY</p>
+          </div>
+          <iframe
+            class="google-map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193571.43841125498!2d-74.11808665!3d40.7058251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c250b5899a6b77%3A0x9488e3f1b435dc2c!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sus!4v1717948800000!5m2!1sen!2sus"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </div>
+    </main>
     <footer>
       <div class="footerContainer">
         <div class="footerTop">
@@ -129,5 +191,6 @@
         </div>
       </div>
     </footer>
+    <script src="script/script.js"></script>
   </body>
 </html>
