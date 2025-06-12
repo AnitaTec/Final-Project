@@ -98,13 +98,23 @@ buttons.forEach((btn) => {
 
 Object.entries(dropdownElements).forEach(([type, dropdown]) => {
   dropdown.addEventListener("click", (e) => {
-    const selected = e.target.textContent;
+    let selected = e.target.textContent.trim();
     if (!selected) return;
+
+    // Убираем "km" и пробел, если это дистанция
+    if (type === "distance" && selected !== "Any distance") {
+      selected = selected.split(" ")[0];
+    }
 
     const btnLabel = document.querySelector(
       `.filter-btn[data-type="${type}"] .label`
     );
-    if (btnLabel) btnLabel.textContent = selected;
+
+    if (btnLabel) {
+      btnLabel.textContent =
+        selected +
+        (type === "distance" && selected !== "Any distance" ? " km" : "");
+    }
 
     selectedFilters[type] = selected;
     dropdown.style.display = "none";
@@ -129,12 +139,14 @@ function renderEvents() {
     const typeMatch =
       selectedFilters.type === "Any type" ||
       event.type === selectedFilters.type;
+
     const categoryMatch =
       selectedFilters.category === "Any category" ||
       event.category === selectedFilters.category;
+
     const distanceMatch =
       selectedFilters.distance === "Any distance" ||
-      event.distance <= +selectedFilters.distance;
+      event.distance <= Number(selectedFilters.distance);
 
     return typeMatch && categoryMatch && distanceMatch;
   });

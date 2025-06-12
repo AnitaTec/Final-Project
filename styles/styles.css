@@ -1210,6 +1210,25 @@ footer {
   }
 }
 
+@media (max-width: 393px) {
+  .filter-scroll-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 12px;
+    padding: 10px 0;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .filter-wrapper {
+    flex: 0 0 auto;
+  }
+
+  .filter-btn {
+    white-space: nowrap;
+  }
+}
+
 /* filter/////// */
 
 .filter-wrapper {
@@ -1364,5 +1383,3 @@ footer {
     padding-bottom: 38px;
   }
 }
-
-/* ======= stules from js  */
